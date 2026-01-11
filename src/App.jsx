@@ -14,19 +14,16 @@ function App() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);
 
-  // Добавление новой задачи
   const addTask = () => {
     if (newTask.trim() === '') return;
     setTasks([...tasks, { text: newTask, completed: false }]);
     setNewTask('');
   };
 
-  // Удаление задачи
   const removeTask = (index) => {
     setTasks(tasks.filter((_, i) => i !== index));
   };
 
-  // Переключение состояния completed
   const toggleTask = (index) => {
     setTasks(
       tasks.map((task, i) =>
