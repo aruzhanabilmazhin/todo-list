@@ -1,4 +1,4 @@
-/* --- Базовая настройка --- */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f2f5;
@@ -78,7 +78,7 @@ body {
     background-color: #da190b;
   }
   
-  /* --- Список задач --- */
+  
   ul {
     list-style: none;
     padding: 0;
@@ -98,7 +98,7 @@ body {
     background-color: #f9f9f9;
   }
   
-  /* --- Чекбоксы --- */
+  
   .task-row input[type="checkbox"] {
     width: 20px;
     height: 20px;

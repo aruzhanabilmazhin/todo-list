@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function App() {
-  // Загружаем задачи из localStorage
+
   const [tasks, setTasks] = useState(() => {
     const saved = localStorage.getItem('tasks');
     return saved ? JSON.parse(saved) : [];
@@ -9,7 +9,7 @@ function App() {
 
   const [newTask, setNewTask] = useState('');
 
-  // Сохраняем задачи в localStorage при изменении
+  
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);
